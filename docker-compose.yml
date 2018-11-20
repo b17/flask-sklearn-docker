@@ -10,6 +10,7 @@ services:
       - 18080:8080
     volumes:
       - ./:/var/www/app
+      - /etc/localtime:/etc/localtime:ro
     logging:
        driver: "json-file"
        options:
